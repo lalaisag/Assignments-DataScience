@@ -16,8 +16,7 @@ def clean_age(df: pd.DataFrame) -> pd.DataFrame:
     """
     # TODO: Implement this function
    df["Age"] = df["Age"].fillna(df["Age"].median())
-return df
-
+   return df
 def convert_types(df:pd.DataFrame) -> pd.DataFrame:
     """
     Convert 'CryoSleep' and 'VIP' columns to boolean types.
@@ -26,8 +25,8 @@ def convert_types(df:pd.DataFrame) -> pd.DataFrame:
     """
     # TODO: Implement this function
    df["CryoSleep"] = df["CryoSleep"].fillna(False).astype(bool)
-df["VIP"] = df["VIP"].fillna(False).astype(bool)
-return df
+   df["VIP"] = df["VIP"].fillna(False).astype(bool)
+   return df
 
 if __name__ == "__main__":
     # This block allows students to test their code locally
